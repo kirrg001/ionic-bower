@@ -49816,7 +49816,7 @@ function RepeatManagerFactory($rootScope, $window, $$rAF) {
     var isLayoutReady = false;
     var isDataReady = false;
     this.refreshLayout = function(itemsAfterRepeater) {
-      estimatedHeight = heightGetter(0, data[0]);
+      estimatedHeight = heightGetter(0, data[1]);
       estimatedWidth = widthGetter(0, data[0]);
 
       // Get the size of every element AFTER the repeater. We have to get the margin before and
