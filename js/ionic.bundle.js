@@ -50664,7 +50664,7 @@ function RepeatManagerFactory($rootScope, $window, $$rAF) {
     var isDataReady = false;
     this.refreshLayout = function() {
       if (data.length) {
-        estimatedHeight = heightGetter(0, data[0]);
+	estimatedHeight = heightGetter(0, data[1]);
         estimatedWidth = widthGetter(0, data[0]);
       } else {
         // If we don't have any data in our array, just guess.
